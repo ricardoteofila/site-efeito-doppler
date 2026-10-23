@@ -1,1 +1,145 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #1d3557);
+    color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 30px;
+    background: #ffffff;
+    color: #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2563eb;
+}
+
+.descricao {
+    margin-bottom: 28px;
+    text-align: center;
+    color: #64748b;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #60a5fa;
+    border-color: #2563eb;
+}
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button.secundario {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+button.secundario:hover {
+    background: #cbd5e1;
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+#resultado h2 {
+    margin-top: 0;
+    color: #1d4ed8;
+}
+
+#frequenciaCalculada {
+    display: block;
+    margin: 12px 0;
+    font-size: 30px;
+    color: #15803d;
+    overflow-wrap: anywhere;
+}
+
+#interpretacao {
+    color: #475569;
+}
+
+#erro {
+    color: #dc2626;
+    font-weight: bold;
+    text-align: center;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 22px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #frequenciaCalculada {
+        font-size: 25px;
+    }
+}
